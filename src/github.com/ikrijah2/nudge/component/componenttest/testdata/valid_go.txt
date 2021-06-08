@@ -1,0 +1,9 @@
+package testdata
+
+
+import (
+    "github.com/ikrijah2/nudge/exporter/exporter1"
+)
+
+func main() {
+}

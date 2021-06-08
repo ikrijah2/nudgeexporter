@@ -1,0 +1,11 @@
+{
+  "autorestArguments": [
+    "--use=@microsoft.azure/autorest.go@2.1.169",
+    "--go",
+    "--verbose",
+    "--go-sdk-folder=.",
+    "--multiapi",
+    "--use-onever",
+    "--version=V2"
+  ]
+}

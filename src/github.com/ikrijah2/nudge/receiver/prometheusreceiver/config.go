@@ -1,0 +1,87 @@
+// Copyright The OpenTelemetry Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//       http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package prometheusreceiver
+
+import (
+	"fmt"
+	"time"
+
+	promconfig "github.com/prometheus/prometheus/config"
+	"github.com/spf13/cast"
+	"gopkg.in/yaml.v2"
+
+	"github.com/ikrijah2/nudge/config"
+)
+
+const (
+	// The key for Prometheus scraping configs.
+	prometheusConfigKey = "config"
+)
+
+// Config defines configuration for Prometheus receiver.
+type Config struct {
+	config.ReceiverSettings `mapstructure:",squash"`
+	PrometheusConfig        *promconfig.Config `mapstructure:"-"`
+	BufferPeriod            time.Duration      `mapstructure:"buffer_period"`
+	BufferCount             int                `mapstructure:"buffer_count"`
+	UseStartTimeMetric      bool               `mapstructure:"use_start_time_metric"`
+	StartTimeMetricRegex    string             `mapstructure:"start_time_metric_regex"`
+
+	// ConfigPlaceholder is just an entry to make the configuration pass a check
+	// that requires that all keys present in the config actually exist on the
+	// structure, ie.: it will error if an unknown key is present.
+	ConfigPlaceholder interface{} `mapstructure:"config"`
+}
+
+var _ config.Receiver = (*Config)(nil)
+var _ config.CustomUnmarshable = (*Config)(nil)
+
+// Validate checks the receiver configuration is valid
+func (cfg *Config) Validate() error {
+	if cfg.PrometheusConfig != nil && len(cfg.PrometheusConfig.ScrapeConfigs) == 0 {
+		return errNilScrapeConfig
+	}
+	return nil
+}
+
+// Unmarshal a config.Parser into the config struct.
+func (cfg *Config) Unmarshal(componentParser *config.Parser) error {
+	if componentParser == nil {
+		return nil
+	}
+	// We need custom unmarshaling because prometheus "config" subkey defines its own
+	// YAML unmarshaling routines so we need to do it explicitly.
+
+	err := componentParser.UnmarshalExact(cfg)
+	if err != nil {
+		return fmt.Errorf("prometheus receiver failed to parse config: %s", err)
+	}
+
+	// Unmarshal prometheus's config values. Since prometheus uses `yaml` tags, so use `yaml`.
+	promCfgMap := cast.ToStringMap(componentParser.Get(prometheusConfigKey))
+	if len(promCfgMap) == 0 {
+		return nil
+	}
+	out, err := yaml.Marshal(promCfgMap)
+	if err != nil {
+		return fmt.Errorf("prometheus receiver failed to marshal config to yaml: %s", err)
+	}
+
+	err = yaml.UnmarshalStrict(out, &cfg.PrometheusConfig)
+	if err != nil {
+		return fmt.Errorf("prometheus receiver failed to unmarshal yaml to prometheus config: %s", err)
+	}
+	return nil
+}
