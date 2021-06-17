@@ -1,0 +1,11 @@
+POST http://localhost:8080/upload
+Content-Type: multipart/form-data; boundary=End
+
+--End
+
+Content-Disposition: form-data; myFile="newfile.txt"
+Content-Type: text/plain
+
+< ./newfile.txt
+
+--End--
