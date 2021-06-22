@@ -3,7 +3,7 @@ Content-Type: multipart/form-data; boundary=End
 
 --End
 
-Content-Disposition: form-data; myFile="newfile.txt"
+Content-Disposition: form-data; name="f"; filename="newfile.txt"
 Content-Type: text/plain
 
 < ./newfile.txt
