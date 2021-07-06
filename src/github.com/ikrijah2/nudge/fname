@@ -1,76 +1,81 @@
-$dc561b24-88be-4668-8e39-b6fd895b9a21BÚ8ô¡û®¥ÊÎÅJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:15 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:15 GMTBª8ø¦âŒ©ÊÎÅJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:15 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:15 GMTJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:16 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:16 GMTBú8øøÆê¬ÊÎÅJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:15 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:15 GMTJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:16 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:16 GMTJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:17 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:17 GMTBÊ8¼ÉËÈ°ÊÎÅJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:15 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:15 GMTJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:16 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:16 GMTJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:17 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:17 GMTJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:18 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:18 GMTBš8ì·¦´ÊÎÅJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:15 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:15 GMTJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:16 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:16 GMTJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:17 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:17 GMTJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:18 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:18 GMTJ
-http.status_code200J>
-response.content*echo: client message: 6/23/2021 1:50:19 PMJ
-response.length42J+
-http.header.ServerMicrosoft-NetCore/2.0J1
-http.header.DateWed, 23 Jun 2021 13:50:19 GMT
+$0a2e0511-f640-418b-bbf4-a0d83cd8a2a8²3.4.0BÌ
+POST:/api/request8Ì¿Óñı›ºÇ@ˆ½©òı›ºÇÂSPAN_KIND_CLIENTÊPOST:/api/requestÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:43 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:43 GMT’$8c10e699-6b82-4ed1-b698-b46804b898c7ÈB 
+POST:/api/request8Ø²´ÏœºÇ@ÈÕœĞœºÇÂSPAN_KIND_CLIENTÊPOST:/api/requestÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:43 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:43 GMTÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:44 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:44 GMT’$8c10e699-6b82-4ed1-b698-b46804b898c7ÈBô
+POST:/api/request8äÇ«­…œºÇ@ŒåŒ®…œºÇÂSPAN_KIND_CLIENTÊPOST:/api/requestÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:43 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:43 GMTÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:44 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:44 GMTÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:45 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:45 GMT’$8c10e699-6b82-4ed1-b698-b46804b898c7ÈBÈ
+POST:/api/request8°–‹‰œºÇ@Ì»ü‹‰œºÇÂSPAN_KIND_CLIENTÊPOST:/api/requestÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:43 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:43 GMTÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:44 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:44 GMTÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:45 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:45 GMTÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:46 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:46 GMT’$8c10e699-6b82-4ed1-b698-b46804b898c7ÈBœ	
+POST:/api/request8€“‰éŒœºÇ@ô¾èéŒœºÇÂSPAN_KIND_CLIENTÊPOST:/api/requestÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:43 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:43 GMTÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:44 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:44 GMTÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:45 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:45 GMTÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:46 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:46 GMTÒ
+http.status_code200Ò=
+response.content)echo: client message: 7/5/2021 1:42:47 PMÒ
+response.length41Ò+
+http.header.ServerMicrosoft-NetCore/2.0Ò1
+http.header.DateMon, 05 Jul 2021 13:42:47 GMT’$8c10e699-6b82-4ed1-b698-b46804b898c7È

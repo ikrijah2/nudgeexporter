@@ -1,11 +1,12 @@
-POST http://localhost:8080/upload
+PUT http://172.17.0.4:8080/collect/rawdata/f760b009-f5f5-4ff2-a658-1135165879d7
 Content-Type: multipart/form-data; boundary=End
 
 --End
 
-Content-Disposition: form-data; name="f"; filename="newfile.txt"
+Content-Disposition: form-data; name="file"; filename="fname"
 Content-Type: text/plain
 
-< ./newfile.txt
+< ./fname
 
 --End--
+
