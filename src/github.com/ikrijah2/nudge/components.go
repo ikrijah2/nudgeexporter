@@ -5,8 +5,6 @@ import (
 	"github.com/ikrijah2/nudge/consumer/consumererror"
 	"github.com/ikrijah2/nudge/service/defaultcomponents"
 
-//"github.com/ikrijah2/nudge/exporter/fileexporter"
-
 )
 
 
@@ -22,7 +20,6 @@ func components() (
 	}
 
 	exporters := []component.ExporterFactory{
-		//fileexporter.NewFactory(),
 	}
 
 	for _, pr := range factories.Exporters {
