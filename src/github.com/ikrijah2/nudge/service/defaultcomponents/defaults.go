@@ -18,10 +18,10 @@ package defaultcomponents
 import (
 	"github.com/ikrijah2/nudge/component"
 	"github.com/ikrijah2/nudge/consumer/consumererror"
-	"github.com/ikrijah2/nudge/exporter/fileexporter"
 	"github.com/ikrijah2/nudge/exporter/jaegerexporter"
 	"github.com/ikrijah2/nudge/exporter/kafkaexporter"
 	"github.com/ikrijah2/nudge/exporter/loggingexporter"
+	"github.com/ikrijah2/nudge/exporter/nudgeexporter"
 	"github.com/ikrijah2/nudge/exporter/opencensusexporter"
 	"github.com/ikrijah2/nudge/exporter/otlpexporter"
 	"github.com/ikrijah2/nudge/exporter/otlphttpexporter"
@@ -84,7 +84,7 @@ func Components() (
 		loggingexporter.NewFactory(),
 		zipkinexporter.NewFactory(),
 		jaegerexporter.NewFactory(),
-		fileexporter.NewFactory(),
+		nudgeexporter.NewFactory(),
 		otlpexporter.NewFactory(),
 		otlphttpexporter.NewFactory(),
 		kafkaexporter.NewFactory(),

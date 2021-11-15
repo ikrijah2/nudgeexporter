@@ -157,6 +157,14 @@ func (j *JSONPb) Unmarshal(data []byte, v interface{}) error {
 
 // NewDecoder returns a Decoder which reads JSON stream from "r".
 func (j *JSONPb) NewDecoder(r io.Reader) runtime.Decoder {
+	// // PERSONNAL EDIT BEGIN
+	// buf := new(strings.Builder)
+	// _, err := io.Copy(buf, r)
+	// if err != nil {
+	// 	fmt.Printf("oups \n\n\n\n\n\n")
+	// }
+	// fmt.Println(buf.String() + "\n\n\n")
+	// // PERSONNAL EDIT END
 	d := json.NewDecoder(r)
 	return DecoderWrapper{Decoder: d}
 }

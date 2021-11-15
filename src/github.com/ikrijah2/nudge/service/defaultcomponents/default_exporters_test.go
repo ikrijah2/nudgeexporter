@@ -29,9 +29,9 @@ import (
 	"github.com/ikrijah2/nudge/component/componenterror"
 	"github.com/ikrijah2/nudge/config"
 	"github.com/ikrijah2/nudge/config/configgrpc"
-	"github.com/ikrijah2/nudge/exporter/fileexporter"
 	"github.com/ikrijah2/nudge/exporter/jaegerexporter"
 	"github.com/ikrijah2/nudge/exporter/kafkaexporter"
+	"github.com/ikrijah2/nudge/exporter/nudgeexporter"
 	"github.com/ikrijah2/nudge/exporter/opencensusexporter"
 	"github.com/ikrijah2/nudge/exporter/otlpexporter"
 	"github.com/ikrijah2/nudge/exporter/otlphttpexporter"
@@ -55,7 +55,7 @@ func TestDefaultExporters(t *testing.T) {
 		{
 			exporter: "file",
 			getConfigFn: func() config.Exporter {
-				cfg := expFactories["file"].CreateDefaultConfig().(*fileexporter.Config)
+				cfg := expFactories["file"].CreateDefaultConfig().(*nudgeexporter.Config)
 				f, err := ioutil.TempFile("", "otelcol_defaults_file_exporter_test*.tmp")
 				require.NoError(t, err)
 				assert.NoError(t, f.Close())
